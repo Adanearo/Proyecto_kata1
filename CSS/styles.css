@@ -63,8 +63,8 @@ input{
                     border: 1rem solid white;
                     border-radius: 30%;
                     box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
-                    width: 12.5rem;
-                    height: 12.5rem;
+                    width: 14rem;
+                    height: 14rem;
                     left: 0;
                     right: 0;
                     position: absolute;
@@ -145,6 +145,170 @@ input{
                 .cardSmall{
                     grid-row-end: span var(--card_small);
                     background-color: #678D58;
+                    text-align: center;
+                }
+                .cardMedium{
+                    grid-row-end: span var(--card_medium);
+                    background-color: #A6C48A;
+                }
+                .cardLarge{
+                    grid-row-end: span var(--card_large);
+                    background-color: #DD9787;
+                }
+            .card:hover{
+                transition: 1.2s;
+                background-color: #2a9d8f;
+            }
+.footer{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+.bWith{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5%;
+    color: #2b2b2b;
+}
+.pbWith{
+    font-size: 1rem;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    margin: 0;
+    padding-right: 2%;
+    color: #2b2b2b;
+}
+@media (max-width: 1190px){
+:root{
+    --card_width: 100px;
+    --card_border_radius: 10px;
+    --row_increment: 10px;
+    --card_small: 11;
+    --card_medium: 15;
+    --card_large: 20;
+}
+.welcomePage{
+    display: flex;
+    flex-flow: column;
+    /* outline: 2px solid red; */
+    justify-content: center;
+    padding: 2% 10%;
+    background-color: white;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.1rem;
+}
+    .welcomeP{
+        display: flex;
+        flex-flow: column;
+        /* outline: 2px solid blue; */
+        padding: 3.1%;
+        margin: 10px;
+        align-content: center;
+        background-color: #FFF5E4;
+        border-radius: 16px;
+    }
+    .logo{
+        margin-bottom: 4%;
+        align-self: center;
+        height: 15rem;
+        width: 15rem;
+        background: radial-gradient(
+            circle at 80% 130%,
+            #e76f51 1%,
+            #f4a261 5%,
+            #e9c46a 15%,
+            #2a9d8f 60%,
+            #264653);
+            border-radius: 30%;
+            position: relative;
+        }
+            .logo:before{
+                content: "";
+                border: 0.5rem solid white;
+                border-radius: 30%;
+                box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+                width: 12.5rem;
+                height: 12.5rem;
+                left: 0;
+                right: 0;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+            }
+            .logo:after{
+                content: "P";
+                font-family: 'Pacifico', cursive;
+                text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+                color: white;
+                font-size: 10rem;
+                height: 18rem;
+                left: 0;
+                right: 0;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                text-align: center;
+            }
+            .welcomeTxt{
+                padding: 2rem 0;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            .pageName{
+                text-align: center;
+                font-family: 'Pacifico', cursive;
+                text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+                font-size: 3rem;
+                color: #2b2b2b;
+                margin: 2%;
+            }
+            .logIn_Form,.fields{
+                margin: 5%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15%;
+                justify-content: center;
+                font-size: 1rem;
+            }
+            .logIn,.signIn{
+                padding: 0.5rem;
+                border: 2.5px solid;
+                border-color: #2a9d8f;
+                border-radius: 10px;
+                font-weight: bold;
+                color: #2a9d8f
+            }
+            #email,#password{
+                text-align: center;
+                font-size: 1rem;
+                border-radius: 16px;
+                border: 1px solid;
+                border-color: lightgray;
+            }
+        .demoP{
+            display: grid;
+            margin: 10px;
+            padding: 0.5%;
+            width: 75vw;
+            /* outline: 2px solid green; */
+            grid-template-columns: repeat(auto-fill, var(--card_width));
+            grid-auto-rows: var(--row_increment);
+            place-content: center;
+            background-color: #EEFFDD;
+            border-radius: 16px;
+        }
+            .card{
+                padding: 0;
+                margin: 15px 10px;
+                border-radius: var(--card_border_radius);
+                color: transparent;
+                background-color: #d92e7f;
+            }
+                .cardSmall{
+                    grid-row-end: span var(--card_small);
+                    background-color: #678D58;
                 }
                 .cardMedium{
                     grid-row-end: span var(--card_medium);
@@ -155,19 +319,190 @@ input{
                     background-color: #DD9787;
                 }
 .footer{
-    position: absolute;
+    position: relative;
     bottom: 0%;
-    right: 0%;
+    width: 100%;
 }
 .bWith{
+    font-size: 1rem;
     margin: 0;
-    padding: 5px;
+    padding: 1%;
     color: #2b2b2b;
 }
 .pbWith{
-    padding-top: 15px;
-    padding-bottom: 5px;
+    font-size: 1rem;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
     margin: 0;
-    padding-right: 5px;
+    padding-right: 2%;
     color: #2b2b2b;
+}
+}
+@media (max-width: 414px){
+:root{
+    --card_width: 75px;
+    --card_border_radius: 10px;
+    --row_increment: 10px;
+    --card_small: 10;
+    --card_medium: 15;
+    --card_large: 20;
+}
+input{
+    justify-self: center;
+    align-self: center;
+    width: 12rem;
+    height: 2rem;
+    margin: 2%;
+}
+    .welcomePage{
+        display: flex;
+        flex-flow: column;
+        /* outline: 2px solid red; */
+        justify-content: center;
+        padding: 2% 10%;
+        background-color: white;
+        font-family: 'DM Sans', sans-serif;
+        letter-spacing: 0.1rem;
+    }
+    .welcomeP{
+        display: flex;
+        flex-flow: column;
+        /* outline: 2px solid blue; */
+        padding: 3.1%;
+        margin: 10px;
+        align-content: center;
+        background-color: #FFF5E4;
+        border-radius: 16px;
+    }
+    .logo{
+        margin-bottom: 4%;
+        align-self: center;
+        height: 8rem;
+        width: 8rem;
+        background: radial-gradient(
+            circle at 80% 130%,
+            #e76f51 1%,
+            #f4a261 5%,
+            #e9c46a 15%,
+            #2a9d8f 60%,
+            #264653);
+            border-radius: 30%;
+            position: relative;
+        }
+            .logo:before{
+                content: "";
+                border: 0.5rem solid white;
+                border-radius: 30%;
+                box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+                width: 5.5rem;
+                height: 5.5rem;
+                left: 0;
+                right: 0;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+            }
+            .logo:after{
+                content: "P";
+                font-family: 'Pacifico', cursive;
+                text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+                color: white;
+                font-size: 4rem;
+                height: 7.5rem;
+                left: 0;
+                right: 0;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                bottom: 0;
+                text-align: center;
+            }
+            .welcomeTxt{
+                font-size: 1rem;
+                padding: 2rem 0;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+            .pageName{
+                text-align: center;
+                font-family: 'Pacifico', cursive;
+                text-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+                font-size: 1.8rem;
+                color: #2b2b2b;
+                margin: 2%;
+            }
+            .logIn_Form,.fields{
+                margin: 5%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15%;
+                justify-content: center;
+                font-size: 1rem;
+            }
+            .logIn,.signIn{
+                padding: 0.3rem;
+                border: 2.5px solid;
+                border-color: #2a9d8f;
+                border-radius: 10px;
+                font-weight: bold;
+                color: #2a9d8f
+            }
+            #email,#password{
+                text-align: center;
+                font-size: 1rem;
+                border-radius: 16px;
+                border: 1px solid;
+                border-color: lightgray;
+            }
+        .demoP{
+            display: grid;
+            margin: 10px;
+            padding: 0.5%;
+            width: 70vw;
+            /* outline: 2px solid green; */
+            grid-template-columns: repeat(auto-fill, var(--card_width));
+            grid-auto-rows: var(--row_increment);
+            place-content: center;
+            background-color: #EEFFDD;
+            border-radius: 16px;
+        }
+            .card{
+                padding: 0;
+                margin: 15px 10px;
+                border-radius: var(--card_border_radius);
+                color: transparent;
+                background-color: #d92e7f;
+            }
+                .cardSmall{
+                    grid-row-end: span var(--card_small);
+                    background-color: #678D58;
+                }
+                .cardMedium{
+                    grid-row-end: span var(--card_medium);
+                    background-color: #A6C48A;
+                }
+                .cardLarge{
+                    grid-row-end: span var(--card_large);
+                    background-color: #DD9787;
+                }
+.footer{
+    position: relative;
+    bottom: 0%;
+    width: 100%;
+}
+.bWith{
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 2%;
+    color: #2b2b2b;
+}
+.pbWith{
+    font-size: 0.8rem;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    margin: 0;
+    padding-right: 2%;
+    color: #2b2b2b;
+}
 }
