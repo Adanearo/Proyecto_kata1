@@ -342,10 +342,10 @@ input{
 :root{
     --card_width: 75px;
     --card_border_radius: 10px;
-    --row_increment: 10px;
+    --row_increment: 9px;
     --card_small: 10;
-    --card_medium: 15;
-    --card_large: 20;
+    --card_medium: 10;
+    --card_large: 10;
 }
 input{
     justify-self: center;
@@ -485,6 +485,9 @@ input{
                 .cardLarge{
                     grid-row-end: span var(--card_large);
                     background-color: #DD9787;
+                }
+                .phone{
+                    display: none;
                 }
 .footer{
     position: relative;
