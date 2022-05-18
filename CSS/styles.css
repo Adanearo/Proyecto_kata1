@@ -359,7 +359,7 @@ input{
         flex-flow: column;
         /* outline: 2px solid red; */
         justify-content: center;
-        padding: 2% 10%;
+        padding: 10% 10%;
         background-color: white;
         font-family: 'DM Sans', sans-serif;
         letter-spacing: 0.1rem;
@@ -419,6 +419,7 @@ input{
                 text-align: center;
             }
             .welcomeTxt{
+                display: none;
                 font-size: 1rem;
                 padding: 2rem 0;
                 padding-bottom: 0;
@@ -495,13 +496,13 @@ input{
     width: 100%;
 }
 .bWith{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     margin: 0;
     padding: 2%;
     color: #2b2b2b;
 }
 .pbWith{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding-top: 5%;
     padding-bottom: 2%;
     margin: 0;
