@@ -1,19 +1,40 @@
-*{
+*,.com{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+*::before,
+*::after {
+	box-sizing: border-box;
+}
 *:focus{
     outline: none;
+}
+input,html,img,body,div,span,h1,h2,h3,h4,h5,h6,p,a,footer,header,article,menu,nav,section,ol,ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    list-style: none;
 }
 body{
     width: 100%;
     background: #fafafa;
     position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding-bottom: 30px;
+    font-family: 'DM Sans', sans-serif;
 }
 .navBar{
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -25,7 +46,7 @@ body{
     padding: 5px 0;
 }
     .upNavigation{
-        outline: 1px solid blue;
+        /* outline: 1px solid blue; */
         width: 70%;
         max-width: 1000px;
         height: 100%;
@@ -36,6 +57,7 @@ body{
         .logoName{
             height: 100%;
             font-family: 'Pacifico', cursive;
+            font-size: 1.5rem;
         }
         .searchBar{
             position: absolute;
@@ -54,20 +76,177 @@ body{
             color: rgba(0, 0, 0, 0.5);
         }
         .navItems{
-            height: 22px;
+            height: 24px;
             position: relative;
         }
             .icon{
-                outline: 1px solid green;
-                height: 100%;
+                /* outline: 1px solid green; */
+                height: 90%;
                 cursor: pointer;
                 margin: 0 10px;
                 display: inline-block;
+                font-size: 22px;
             }
             .iconProfile{
-                width: 22px;
+                height: 23px;
+                width: 23px;
                 border-radius: 50%;
-                background-image: url(#);
                 background-size: cover;
             }
-        
+.header{
+    /* outline: 1px solid pink; */
+    max-width: 80vw;
+    margin: 60px auto 10px auto;
+}
+    .profile{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 3rem;
+        align-items: center;
+        padding: 0.5rem;
+    }
+        .profilePhoto{
+            margin: 0;
+            display: flex;
+            grid-row: 1/-1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        @supports(display: grid).profilePhoto,.profileInfo,.profileStats,.profileBio,.gallery,.galleryItem{
+            margin: 0;
+            width: auto;
+        }
+            .profileInfo{
+                grid-area: 1/2/2/3;
+                margin-bottom: 1rem;
+            }
+            .profileImg{
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+            }
+            .userName{
+                display: inline-block;
+                font-size: 1.5rem;
+                font-weight: 100;
+            }
+            .profileEdit_btn,.profileName,.profileStat_count{
+                font-weight: 600;
+
+            }
+                .profileEdit_btn,.profileSettings_btn{
+                    font-size: 0.75rem;
+                    line-height: 1.8;
+                    border: 0.1rem solid #dbdbdb;
+                    border-radius: 0.3rem;
+                    padding: 0 2.4rem;
+                    margin-left: 2rem;
+                }
+                .profileSettings_btn{
+                    font-size: 2rem;
+                    margin-left: 1rem;
+                    padding: 0 0.5rem;
+                }
+                .btn{
+                    display: inline-block;
+                    font: inherit;
+                    background: none;
+                    color: inherit;
+                    cursor: pointer;
+                }
+                .btn:focus {
+                    outline: 0.5rem auto #4d90fe;
+                }
+            .profileStats,li{
+                display: inline-block;
+                font-size: 0.95rem;
+                line-height: 1.2;
+                margin-right: 3.5rem;
+                cursor: pointer;
+                grid-area: 1/2/2/3;
+            }
+            .profileBio{
+                font-size: 1rem;
+                font-weight: 400;
+                line-height: 1.2;
+                margin-top: 1.5rem;
+            }
+                .profileName{
+                    display: inline-block;
+                }
+.container{
+    /* outline: 1px solid black; */
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+    .gallery{
+        columns: 5 200px;
+        column-gap: 1em;
+        padding: 10px;
+    }
+        .galleryItem{
+            position: relative;
+            flex: 1 0 22rem;
+            color: #fff;
+            cursor: pointer;
+            margin-bottom: 1em;
+        }
+        .galleryItem:hover .galleryItem_info,
+        .galleryItem:focus .galleryItem_info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .galleryItem:hover{
+            filter: brightness(100%);
+        }
+            .galleryImage{
+            border-radius: 16px;
+            width: 100%;
+            object-fit: cover;
+            }
+                .galleryItem_info{
+                    display: none;
+                }
+                .galleryItem_info li {
+                    display: inline-block;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+                .galleryItem_likes{
+                    margin-right: 2.2rem;
+                }
+.visuallyHidden{
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.bWith{
+    margin: 0;
+    padding: 5px;
+}
+.pbWith{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin: 0;
+    padding-right: 5px;
+}              

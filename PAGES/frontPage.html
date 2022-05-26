@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5e8ba18f84.js" crossorigin="anonymous"></script>
     <title>Pinterestigram</title>
 </head>
 <body>
@@ -20,35 +21,523 @@
             <h2 class="logoName">Pinterestigram</h2>
             <input type="text" class="searchBar" placeholder="search">
             <div class="navItems">
-                <img src="#" alt="" class="icon">
-                <img src="#" alt="" class="icon">
-                <img src="#" alt="" class="icon">
-                <img src="#" alt="" class="icon">
-                <img src="#" alt="" class="icon">
-                <div class="icon iconProfile"></div>
+                <i class="fa-solid fa-house-fire icon"></i>
+                <i class="fa-solid fa-message icon"></i>
+                <i class="fa-solid fa-plus icon"></i>
+                <i class="fa-solid fa-compass-drafting icon"></i>
+                <i class="fa-solid fa-heart icon"></i>
+                <img src="../RESOURCES/nale.png" alt="" class="icon iconProfile">
             </div>
         </nav>
     </header>
+    <header class="header">
     <div class="container">
-        <section class="profile">
-            <div class="profile-photo"><img src="../RESOURCES/Profile.jpg" alt="profile-photo"></div>
-            <div class="profileInfo">
-                <p class="userName">Adrian Ramos</p>
-                <button>Follow</button>
+        <div class="profile">
+            <div class="profilePhoto">
+                <img class="profileImg" src="../RESOURCES/nale.png" alt="profile-photo">
             </div>
-        </section>
+            <div class="profileInfo">
+                <h1 class="userName">Izaid_Ramos26</h1>
+                <button class="btn profileEdit_btn">Edit Profile</button>
+                <button class="btn profileSettings_btn" aria-label="profile setting"><i class="cog" aria-hidden="true">...</i>
+                </button>
+            </div>
+            <div class="profileStats"></div>
+            <ul>
+                <li><span class="profileStat_count">150</span>Post</li>
+                <li><span class="profileStat_count">150</span>Followers</li>
+                <li><span class="profileStat_count">150</span>Following</li>
+            </ul>
+            <div class="profileBio">
+                <p>
+                    <span class="profileName">Izaid Ramos</span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+        </div>
     </div>
+    </header>
     <main>
-    <hr>
-    <nav class="organization">
-        <div class="galery"></div>
-        <div class="video"></div>
-        <div class="saved"></div>
-        <div class="label"></div>
-    </nav>
-    <section class="imgGrid">
-
-    </section>
+    <div class="container">
+        <div class="gallery">
+           <div class="galleryItem">
+                <img src="https://i.pinimg.com/originals/36/2c/53/362c5308de585d9e0454164a94b6e876.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/be/04/10/be041030daa854e85e6f80e4c51e60be.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="  fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/3a/6c/19/3a6c1975bb36a36a0b363909c0f24269.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/db/a1/97/dba197e33dac6e18cdf161e015dd3753.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/07/2f/91/072f911e43efc41d344b0497f1da7255.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/a8/d6/c7/a8d6c7d7b85101134ed094a36aeb53a2.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/2a/22/3c/2a223c8e1382364e9b2ced42c2d31cdf.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/cf/9c/0e/cf9c0ed6fc0165c7ae1ec669f2e1dfb4.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/f9/94/32/f994326d17f81a267051c0d1eebf89ec.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/f8/92/8a/f8928a3c3473278db29adbbd86b3f80e.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/c3/74/08/c37408edf116e88bc8161c36bcd1ce68.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/aa/65/4c/aa654c9132844983ceea60ccc7d1b968.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/a4/af/26/a4af26d739aa9f82feb746c5b52dee6e.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/32/89/02/328902360e54f64ebaba57d8b3771604.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/9f/a9/58/9fa958c53bb969809af5b8c1b8ca4370.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/be/c4/24/bec42475eec11bfd5c46c4ec6bb3df15.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/a1/7c/17/a17c17b058d9fe7e1b02a0f56a487d60.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/originals/36/2c/53/362c5308de585d9e0454164a94b6e876.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/be/04/10/be041030daa854e85e6f80e4c51e60be.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="  fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/3a/6c/19/3a6c1975bb36a36a0b363909c0f24269.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/db/a1/97/dba197e33dac6e18cdf161e015dd3753.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/07/2f/91/072f911e43efc41d344b0497f1da7255.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/a8/d6/c7/a8d6c7d7b85101134ed094a36aeb53a2.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/2a/22/3c/2a223c8e1382364e9b2ced42c2d31cdf.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/cf/9c/0e/cf9c0ed6fc0165c7ae1ec669f2e1dfb4.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/f9/94/32/f994326d17f81a267051c0d1eebf89ec.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/f8/92/8a/f8928a3c3473278db29adbbd86b3f80e.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/c3/74/08/c37408edf116e88bc8161c36bcd1ce68.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/aa/65/4c/aa654c9132844983ceea60ccc7d1b968.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/a4/af/26/a4af26d739aa9f82feb746c5b52dee6e.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/32/89/02/328902360e54f64ebaba57d8b3771604.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/9f/a9/58/9fa958c53bb969809af5b8c1b8ca4370.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/be/c4/24/bec42475eec11bfd5c46c4ec6bb3df15.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="galleryItem">
+                <img src="https://i.pinimg.com/236x/a1/7c/17/a17c17b058d9fe7e1b02a0f56a487d60.jpg" alt="" class="galleryImage">
+                <div class="galleryItem_info">
+                    <ul>
+                        <li class="galleryItem_likes">
+                            <span class="visuallyHidden">Likes:</span><i class="fa-solid fa-heart" aria-hidden="true"></i>65
+                        </li class="galleryItem_comments">
+                         <li class="com">
+                            <span class="visuallyHidden">Comments:</span>
+                            <i class="fa-solid fa-comments" aria-hidden="true"></i>2
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     </main>
     <footer class="footer">
     <div>
