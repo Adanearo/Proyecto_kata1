@@ -249,4 +249,96 @@ footer{
     padding-bottom: 5px;
     margin: 0;
     padding-right: 5px;
-}              
+}
+/* MEDIA QUERYS */
+
+@media (max-width: 1200px){
+    .likes,.message,.add{
+        display: none;
+    }
+    .gallery{
+        columns: 5 120px;
+        column-gap: 1em;
+        padding: 10px;
+    }
+}
+@media (max-width: 800px){
+    .likes,.message,.add,.compass{
+        display: none;
+    }
+    .gallery{
+        columns: 5 75px;
+        column-gap: 1em;
+        padding: 10px;
+    }
+    .header{
+        /* outline: 1px solid pink; */
+        max-width: 50vw;
+    }
+    .searchBar{
+        /* display: none; */
+        left: 50%;
+        width: 75px;
+        height: 25px;
+    }
+                .profileImg{
+                    border-radius: 50%;
+                    width: 150px;
+                    height: 150px;
+                }
+                .userName{
+                    display: inline-block;
+                    font-size: 1.5rem;
+                    font-weight: 100;
+                }
+                    .btn{
+                        display: none;
+                    }
+                .profileStats,li{
+                    display:inline-flex;
+                    font-size: 0.95rem;
+                    line-height: 1.2;
+                    margin-right: 3.5rem;
+                    cursor: pointer;
+                    grid-area: 1/2/2/3;
+                }
+                .profileBio{
+                    font-size: 1rem;
+                    font-weight: 400;
+                    line-height: 1.2;
+                    margin-top: 1.5rem;
+                }
+                    .profileName{
+                        display: inline-block;
+                    }
+}
+@media (max-width: 650px){
+            .gallery{
+                columns: 3 20px;
+                column-gap: 1em;
+                padding: 10px;
+            }
+            .logoName{
+                height: 100%;
+                font-family: 'Pacifico', cursive;
+                font-size: 1.5em;
+                left: 5%;
+            }
+            .searchBar{
+                /* display: none; */
+                left: 50%;
+                width: 75px;
+                height: 25px;
+            }
+    .likes,.message,.add,.compass,.like{
+        display: none;
+    }
+    .home{
+        margin-left: 20px;
+    }
+    .gallery{
+        columns: 5 120px;
+        column-gap: 1em;
+        padding: 10px;
+    }
+}
